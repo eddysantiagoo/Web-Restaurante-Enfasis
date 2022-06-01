@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    padding: 1rem 4%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+    background: linear-gradient(to bottom, #ffff , #e9e9e9);
+}
+
+.logo img{
+    padding: 1rem 4%;
+    width: 140px;
+ 
+}
+
+.navbar a {
+    color: black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #ffff , #e6e6e6);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.35s;
+    text-decoration: none;
+}
+
+.link:hover{
+    font-size: 19px;
+    color: black;
+    border-radius: 15px
+}
+
+.icons{
+    display: none;
+}
+
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Cierre sesión home */
+
+.home{
+    width: 100%;
+    background-image: url(images/background.jpg);
+    min-height: 100vh;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+  
+}
+
+.home-content{
+    flex: 1 1 45rem;
+}
+
+.home-image img{
+    width: 100%;
+}
+
+.home-text-content{
+    padding: 0 6rem;
+}
+
+
+.home-text-content h1{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.home-text-content h2{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.home-text-content p{
+    color: whitesmoke;
+}
+
+.home-text-content a{
+    margin-top: 10px;
+    color: white;
+    padding: 0.2rem 1.5rem;
+    border: 3px solid #0d274d;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.home-text-content a:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+
+@media (max-width: 850px) {
+
+
+    .header{
+        padding: 2rem;  
+    }
+
+    .icons{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: #0d274d;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .home{
+        width: 100%;
+        background-image: url(images/backgroundresponsive.jpg);
+        min-height: 100vh;
+        height: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-home{
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+
+    .home-text-content{
+        padding: 0 2rem;
+    }
+
+    .home-text-content h1{
+        font-size: 35px;
+    }
+
+    .home-text-content h2{
+        font-size: 25px;
+    }
+
+
+    .home{
+        padding-top: 110px;
+    }
+
+    .home img{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        width: 400px;
+    }
+
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .company{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+
+}
+
+.our-services{
+    background: linear-gradient(to bottom, rgb(0, 51, 94) , #002657);
+    padding: 2rem 7%;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.inner-services{
+    color: white;
+}
+
+.services-text{
+    padding: 1rem 0rem;
+}
+
+.services-text{
+    color: #acacacda;
+    padding: 1rem 0rem;
+}
+
+
+.services-text a{
+    background-color: white;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    padding: 0.2rem 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 15px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.services-text a:hover{
+    transform: scale(1.1);
+    color: white;
+    background: #002a9ef3;
+    border: 1px solid rgb(0, 49, 185);
+}
+
+/* Final seccion servicios */
+
+/* Iniccion secion compañia */
+
+.our-company{
+    padding: 2rem 7%;
+}
+
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-company{
+    color: rgb(0, 0, 0);
+}
+
+#news{
+    font-size: 35px;
+}
+
+#links-events{
+    font-size: 14px;
+}
+
+#text-events{
+    font-size: 16px;
+}
+
+.company-text{
+    color: #292929da;
+    padding: 1rem 0rem;
+}
+
+
+.company-text-2 a{
+    box-shadow: inset 0 0 0 0 #002a9ef3;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.company-text-2  a:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+    color: white;
+}
+
+.company-text a{
+    background-color: white;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    padding: 0.2rem 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 15px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.company-text a:hover{
+    transform: scale(1.1);
+    color: white;
+    background: #002a9ef3;
+    border: 1px solid rgb(0, 49, 185);
+}
+
+
+/* Seccion footer */
