@@ -10,6 +10,7 @@
     font-family: 'Poppins', sans-serif;
     transition: 0.5s;
     text-transform: capitalize;
+
 }
 
 html{
@@ -22,7 +23,7 @@ html{
     position: absolute;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,10 +36,13 @@ html{
     width: 140px;
  
 }
+.header{
+    position: fixed;
+}
 
 .navbar a {
     color: black;
-    margin: 0.5rem;
+    margin: 0.2rem;
     padding: 0.5rem;
     font-size: 1.1rem;
     border-radius: 6px;
