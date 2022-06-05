@@ -134,7 +134,7 @@ html{
 
 
     .header{
-        padding: 2rem;  
+        padding: 1rem;  
     }
 
     .icons{
@@ -186,15 +186,8 @@ html{
         font-size: 25px;
     }
 
-
     .home{
         padding-top: 110px;
-    }
-
-    .home img{
-        padding-top: 2rem;
-        padding-left: 2rem;
-        width: 400px;
     }
 
     .services{
