@@ -29,6 +29,7 @@ html{
     align-items: center;
     z-index: 100%;
     background: linear-gradient(to bottom, #ffff , #e9e9e9);
+    
 }
 
 .logo img{
@@ -38,6 +39,8 @@ html{
 }
 .header{
     position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar a {
