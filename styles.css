@@ -132,87 +132,6 @@ html{
     border: 1px solid white;
 }
 
-
-@media (max-width: 850px) {
-
-
-    .header{
-        padding: 1rem;  
-    }
-
-    .icons{
-        display: initial;
-    }
-
-    .navbar{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        top: 100%;
-        background-color: #0d274d;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
-    }
-
-    .navbar a{
-        display: block;
-        text-align: center;
-        margin: 1rem;
-        padding: 1rem;
-    }
-    
-    .home{
-        width: 100%;
-        background-image: url(images/backgroundresponsive.jpg);
-        min-height: 100vh;
-        height: 100%;
-        background-size:cover;
-        background-repeat: no-repeat;
-    }
-
-    .main-home{
-        padding: 1rem 0;
-        flex-wrap: wrap;
-    }
-
-
-    .home-text-content{
-        padding: 0 2rem;
-    }
-
-    .home-text-content h1{
-        font-size: 35px;
-    }
-
-    .home-text-content h2{
-        font-size: 25px;
-    }
-
-    .home{
-        padding-top: 110px;
-    }
-
-    .services{
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .company{
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center; 
-    }
-
-}
-
 .our-services{
     background: linear-gradient(to bottom, rgb(0, 51, 94) , #002657);
     padding: 2rem 7%;
@@ -329,6 +248,78 @@ html{
     border: 1px solid rgb(0, 49, 185);
 }
 
+/* Seccion conctacto */
+
+
+.contact{
+    width: 100%;
+    height: 90vh;
+    background: #001038;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact form{
+    margin: 80px;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    font-size: 16px;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+
 
 /* Seccion footer */
 
@@ -410,3 +401,102 @@ html{
     color: white;
     text-align: center;
   }
+
+
+  
+@media (max-width: 850px) {
+
+
+    .header{
+        padding: 1rem;  
+    }
+
+    .icons{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: #0d274d;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .home{
+        width: 100%;
+        background-image: url(images/backgroundresponsive.jpg);
+        min-height: 100vh;
+        height: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-home{
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+
+    .home-text-content{
+        padding: 0 2rem;
+    }
+
+    .home-text-content h1{
+        font-size: 35px;
+    }
+
+    .home-text-content h2{
+        font-size: 25px;
+    }
+
+    .home{
+        padding-top: 110px;
+    }
+
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .company{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+
+    .input-group input{
+        font-size: 12px;
+    }
+
+    .contact form{
+    padding: 50px 30px 20px;
+    }
+}
+
+@media (max-width: 370px) {
+
+.footer{
+    height: 30vh;
+    }
+.contact{
+    background-color: white;
+}
+}
