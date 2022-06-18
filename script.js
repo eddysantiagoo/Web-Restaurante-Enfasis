@@ -101,8 +101,8 @@ function validateForm(){
 // Efecto scroll reveal
 
 const sr = ScrollReveal ({
-    distance : '45px',
-    duration : 2700,
+    distance : '15px',
+    duration : 3200,
     reset : true,
   })
 

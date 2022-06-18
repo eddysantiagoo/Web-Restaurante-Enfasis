@@ -57,8 +57,31 @@ html{
 
 .link:hover{
     font-size: 19px;
-    color: black;
-    border-radius: 15px
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-image: linear-gradient(115deg, #00cce7, #6789e5, #12bcfe, #44ce7b);
+    -webkit-animation: play 5s  infinite;
+}
+
+@-webkit-keyframes play {
+    0% {
+        background-position: 0px;
+    }
+    20% {
+        background-position: -110px;
+    }
+    35% {
+        background-position: -180px;
+    }
+    50% {
+        background-position: -210px;
+    }
+    80% {
+        background-position: -350px;
+    }
+    100% {
+        background-position: -390px;
+    }
 }
 
 .icons{
@@ -433,6 +456,7 @@ form button{
 
     .icons{
         display: initial;
+
     }
 
     .navbar{
@@ -449,8 +473,9 @@ form button{
     .navbar a{
         display: block;
         text-align: center;
-        margin: 1rem;
+        margin: 2rem;
         padding: 1rem;
+        background: linear-gradient(to bottom, rgb(216, 216, 216) , #e6e6e6);
     }
     
     .home{
