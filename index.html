@@ -7,7 +7,7 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
-    <script src="https://kit.fontawesome.com/b49c1c71b4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e6425cc2f.js" crossorigin="anonymous"></script>
     <title>EddySantiago I Web</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             <a class="link" href="#about-us">About us</a>
             <a class="link" href="#solutions">Solutions</a>
             <a class="link" href="#products">Products</a>
-            <a class="link" href="">Services</a>
+            <a class="link" href="#solutions">Services</a>
             <a class="link" href="#contacts">Contacts</a>
         </nav>
 
@@ -150,36 +150,42 @@
     <!-- Seccion contacto -->
 
     <div class="contact" id="contacts">
-        <form>
+        <form id="form">
             <i class="fa-solid fa-paper-plane"></i>
             
             <h1>Contact us!👀</h1>
     
           <div class="input-group">
-            <label>Your Name:</label>
-            <input type="text" placeholder="Enter your name">
+            <label for="name" >Your Name:</label>
+            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
           </div>
     
           <div class="input-group">
-            <label>Phone Number:</label>
-            <input type="tel" placeholder="123 456 7890">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()" >
+            <span id="phone-error"></span>
           </div>
     
           <div class="input-group">
-            <label>Your Email:</label>
-            <input type="email" placeholder="Enter your email">
+            <label for="email">Your Email:</label>
+            <input type="email" placeholder="Enter your email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
           </div>   
     
           <div class="input-group">
-            <label>Your Message</label>
-            <textarea rows="5" placeholder="Enter your message!"></textarea>
+            <label for="message">Your Message</label>
+            <textarea rows="5" placeholder="Enter your message!" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
           </div>
     
-        <button>Submit</button>
+        <button onclick="return validateForm()">Submit</button>
+        <span id="submit-error"></span>
        
       </form>
       
     </div>
+
 
     <!-- Seccion footer -->
 
@@ -199,11 +205,15 @@
         <p class="text-center">Eddy Santiago 2022 &copy; <a href="">Privacy Policy</a></p>
     </section>
 
-     <!-- Script JS para Scroll Reveal  -->
+    <!-- Script JS para Scroll Reveal  -->
 
     <script src="https://unpkg.com/scrollreveal"></script>
      
-      <!-- Script JS -->
+    <!-- Script JS -->
     <script src="script.js"></script>
+
+    <!-- Script para mensajes de error -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
